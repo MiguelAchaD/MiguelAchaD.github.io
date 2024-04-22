@@ -1,12 +1,16 @@
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+
 }
 
-main *{
+main * {
     margin: 40px 0 40px;
 }
 
-main button{
+main button {
     width: 300px;
     height: 50px;
     font-size: 1.5rem;
@@ -17,7 +21,68 @@ main button{
     transition: 0.3s;
 }
 
-main button:hover{
+main button:hover {
     background-color: var(--color1_4);
     color: white;
+}
+
+.hueco {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}
+
+.animacion {
+    overflow: hidden;
+    height: 10vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.string {
+    position: relative;
+    top: 9.2vmin;
+    /* 9.2 -2.8 -14.4 -26.3*/
+    display: flex;
+    flex-direction: column;
+    row-gap: 0vmin;
+    text-align: center;
+    animation: move 7s infinite;
+}
+
+.greeting {
+    position: relative;
+    top: 8.6vmin;
+    margin: 1vmin;
+}
+
+.naranja {
+    color: #FF5733;
+}
+
+.azul {
+    color: #3498DB;
+}
+
+.verde {
+    color: #27AE60;
+}
+
+.morado {
+    color: #9B59B6;
+}
+
+@keyframes move {
+    25% {
+        top: -2.8vmin;
+    }
+
+    50% {
+        top: -14.4vmin;
+    }
+
+    75% {
+        top: -26.3vmin;
+    }
 }

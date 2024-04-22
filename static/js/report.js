@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Desgaste en la superficie",
         "Olor a humedad",
       ],
-     Cama: [
+      Cama: [
         "Ruido al mover",
         "Desgaste en el colchón",
         "Estructura inestable",
@@ -133,20 +133,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Función para llenar el segundo select con los objetos correspondientes
   function llenarObjetos(tipoObjeto) {
+    tipoObjeto = tipoObjeto.replace(" ", "_");
     objetoSelect.innerHTML = '<option value="" disabled selected>Selecciona el tipo de objeto roto</option>';
     Object.keys(opciones[tipoObjeto]).forEach(objeto => {
       const option = document.createElement("option");
-      option.text = objeto;
+      option.text = objeto.replace("_", " ");
       objetoSelect.add(option);
     });
   }
 
   // Llenar el tercer select con los tipos de rotura correspondientes
   function llenarTiposRotura(objeto) {
+    objeto = objeto.replace(" ", "_");
     tipoRoturaSelect.innerHTML = '<option value="" disabled selected>Selecciona el tipo de rotura</option>';
     opciones[tipoObjetoSelect.value][objeto].forEach(tipoRotura => {
       const option = document.createElement("option");
-      option.text = tipoRotura;
+      option.text = tipoRotura.replace("_", " ");
       tipoRoturaSelect.add(option);
     });
   }
@@ -156,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tipoObjetoSelect.innerHTML = '<option value="" disabled selected>Selecciona el tipo de objeto de incidencia</option>';
     Object.keys(opciones).forEach(objeto => {
       const option = document.createElement("option");
-      option.text = objeto;
+      option.text = objeto.replace("_", " ");
       tipoObjetoSelect.add(option);
     });
   }
@@ -260,7 +262,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function volverVentanaPrincipal() {
-   location.href = "../index.html";
+    location.href = "../index.html";
   }
 
   function enviarFormulario() {
