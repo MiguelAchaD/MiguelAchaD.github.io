@@ -18,13 +18,11 @@ main select {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px 0 100px;
+    margin-bottom: 50px;
 }
 
 textarea {
     resize: none;
-    width: 100%;
-    height: 100%;
     padding: 10px;
 }
 
@@ -81,7 +79,7 @@ textarea {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 100px 0 100px;
+    margin-bottom: 100px;
 }
 
 .arrows {
@@ -93,8 +91,13 @@ textarea {
 }
 
 .arrows button {
+    display: block;
     background: none;
     border: none;
+}
+
+.arrows button:hover{
+    cursor: pointer;
 }
 
 .arrows img {
@@ -103,6 +106,10 @@ textarea {
 
 #arrow_right {
     transform: rotateY(180deg);
+}
+
+.p_capture:hover{
+    cursor: pointer;
 }
 
 .error {
