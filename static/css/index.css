@@ -11,9 +11,9 @@ main * {
 }
 
 main button {
-    width: 300px;
+    width: 40vmin;
     height: 50px;
-    font-size: 1.5rem;
+    font-size: 3vmin;
     font-weight: bold;
     background-color: var(--color1_2);
     border: solid 2px var(--color1_3);
@@ -24,6 +24,10 @@ main button {
 main button:hover {
     background-color: var(--color1_4);
     color: white;
+}
+
+main h2 {
+    margin: 0 15vmin 0 15vmin;
 }
 
 .hueco {
@@ -43,7 +47,6 @@ main button:hover {
 .string {
     position: relative;
     top: 9.2vmin;
-    /* 9.2 -2.8 -14.4 -26.3*/
     display: flex;
     flex-direction: column;
     row-gap: 0vmin;
@@ -54,7 +57,7 @@ main button:hover {
 .greeting {
     position: relative;
     top: 8.6vmin;
-    margin: 1vmin;
+    margin: 2.2vmin;
 }
 
 .naranja {

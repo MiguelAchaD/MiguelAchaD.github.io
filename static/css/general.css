@@ -32,11 +32,11 @@ main {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 5vmin;
 }
 
 h2, label{
-    font-size: 2rem;
+    font-size: 3vmin;
 }
 
 input, textarea{

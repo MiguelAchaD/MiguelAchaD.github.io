@@ -5,9 +5,9 @@ select {
 }
 
 main select {
-    width: 25em;
-    height: 3em;
-    font-size: 20px;
+    width: 60vmin;
+    height: 10vmin;
+    font-size: 2.5vmin;
     background: none;
     border: solid 1px black;
     border-radius: 10px;
@@ -24,6 +24,15 @@ main select {
 textarea {
     resize: none;
     padding: 10px;
+    width: 75vmin;
+}
+
+input{
+    width: 75vmin;
+}
+
+label{
+    font-size: 4.6vmin;
 }
 
 @keyframes colorFill {
@@ -60,17 +69,17 @@ textarea {
 .paso {
     background-color: var(--paso_inactivo);
     border-radius: 100%;
-    width: 70px;
-    height: 70px;
+    width: 10vmin;
+    height: 10vmin;
     text-align: center;
-    line-height: 70px;
-    font-size: 25px;
+    line-height: 10vmin;
+    font-size: 4vmin;
 }
 
 .divisor {
     background-color: var(--paso_inactivo);
-    height: 10px;
-    width: 70px;
+    height: 1.5vmin;
+    width: 5vmin;
     z-index: 1;
 }
 
@@ -83,7 +92,7 @@ textarea {
 }
 
 .arrows {
-    margin-bottom: 50px;
+    margin-bottom: 20vmin;
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
@@ -101,7 +110,7 @@ textarea {
 }
 
 .arrows img {
-    height: 40px;
+    height: 6vmin;
 }
 
 #arrow_right {

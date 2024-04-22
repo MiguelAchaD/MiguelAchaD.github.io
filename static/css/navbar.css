@@ -1,5 +1,5 @@
 nav {
-    padding: 15px;
+    padding: 2vmin;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,7 +12,7 @@ nav ul {
 
 nav a {
     display: block;
-    width: 60px;
+    width: 7vmin;
 }
 
 .nav-right {
@@ -35,23 +35,23 @@ nav a {
 }
 
 .nav-right ul li {
-    margin-left: 15px;
+    margin-left: 4vmin;
 }
 
 #logo {
     text-decoration: none;
     color: black;
-    font-size: 60px;
+    font-size: 10vmin;
     font-weight: bolder;
 }
 
 #logo:hover span{
     color: var(--color1);
-    font-size: 45px;
+    font-size: 7vmin;
 }
 
 #logo span {
-    font-size: 40px;
+    font-size: 5vmin;
     transition: 0.3s;
     font-style: italic;
 }
