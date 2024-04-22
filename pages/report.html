@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/general.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/report.css" />
+    <script src="../static/js/report.js"></script>
+    <title>V13 - Incidencia</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li class="left">
+                    <a href="../index.html" id="logo">V<span>13</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li class="right">
+                    <a href="#"><img src="../static/images/report.svg" alt=""></a>
+                </li>
+                <li class="right">
+                    <a href="about.html"><img src="../static/images/about.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="cerrar">&times;</span>
+                <h2>¿Estás seguro de enviar el formulario?</h2>
+                <div class="buttons">
+                    <button id="confirmar">Sí</button>
+                    <button id="cancelar">No</button>
+                </div>
+            </div>
+        </div>
+
+        <h1>Formulario de Incidencias</h1>
+        <div id="pasos">
+            <div id="paso_1" class="paso">1</div>
+            <div class="divisor"></div>
+            <div id="paso_2" class="paso">2</div>
+            <div class="divisor"></div>
+            <div id="paso_3" class="paso">3</div>
+            <div class="divisor"></div>
+            <div id="paso_4" class="paso">4</div>
+            <div class="divisor"></div>
+            <div id="paso_5" class="paso">5</div>
+        </div>
+        <div id="partes">
+            <div class="arrows">
+                <button id="arrow_left"><img src="../static/images/arrow.svg" alt="go back"></button>
+                <button id="arrow_right"><img src="../static/images/arrow.svg" alt="continue"></button>
+            </div>
+            <select name="Incidencia" id="p1" class="p_capture">
+                <option value="" disabled selected>Selecciona el tipo de objeto de incidencia</option>
+                <option value="infraestructura">Infraestructura (pared/suelo/techo)</option>
+                <option value="electrodomestico">Electrodoméstico</option>
+                <option value="electronico">Aparato electrónico</option>
+                <option value="otro">otro</option>
+            </select>
+            <select name="objeto" id="p2" class="p_capture">
+                <option value="" disabled selected>Selecciona el tipo de objeto roto</option>
+                <option value="prueba">prueba</option>
+            </select>
+            <select name="tipo_rotura" id="p3" class="p_capture">
+                <option value="" disabled selected>Selecciona el tipo de rotura</option>
+                <option value="total">total</option>
+                <option value="parcial">parcial</option>
+                <option value="estetica">estetica</option>
+            </select>
+            <label class="p_capture" id="p4">Your Image File<br>
+                <input type="file" name="myImage" accept="image/png, image/gif, image/jpeg" />
+            </label>
+            <label class="p_capture" id="p5"> <span>Opcional</span> <br>Escribe una descripción breve sobre la imagen<br>
+                <textarea name="descripcion_extra" cols="60" rows="10"></textarea>
+            </label>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eius repudiandae illo natus numquam eveniet
+            dolore earum culpa maiores tenetur ipsum doloribus sint veniam reprehenderit, odit ad, atque quibusdam iste!
+        </p>
+    </footer>
+</body>
+
+</html>
