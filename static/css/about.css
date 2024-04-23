@@ -1,0 +1,21 @@
+main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vmin;
+    margin-bottom: 10vmin;
+}
+
+.container{
+    display: flex;
+    margin: 0 20vmin 0 20vmin;
+    column-gap: 2%;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+img{
+    width: 83vmin;
+    aspect-ratio: 1.78;
+}

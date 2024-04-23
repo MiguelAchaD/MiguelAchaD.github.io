@@ -266,11 +266,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function enviarFormulario() {
-    if (validarPasosF(document.querySelectorAll(`.p_capture`))) {
-      alert("Formulario enviado con éxito");
-    } else {
-      alert("Pasos del formulario incompletos!");
-    }
+    alert("Formulario enviado con éxito");
   }
 
   arrowLeft.addEventListener("click", function () {
@@ -308,18 +304,6 @@ document.addEventListener("DOMContentLoaded", () => {
       pasoValido = false;
     }
     return pasoValido;
-  }
-
-  function validarPasosF(elementos) {
-    let childrenE = Array.from(elementos);
-    let validos = true;
-
-    childrenE.forEach(elemento => {
-      if (!validarPaso(elemento)) {
-        validos = false;
-      }
-    })
-    return validos;
   }
 
   function sustraerElmento(elemento) {
