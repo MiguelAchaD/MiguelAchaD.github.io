@@ -32,15 +32,15 @@ main {
 }
 
 h1 {
-    font-size: 5vmin;
+    font-size: 3.5vmin;
 }
 
 h2, label{
-    font-size: 3vmin;
+    font-size: 2vmin;
 }
 
 input, textarea{
-    font-size: 1.5rem;
+    font-size: 1vmin;
 }
 
 label span{

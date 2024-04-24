@@ -41,21 +41,39 @@ nav a {
 #logo {
     text-decoration: none;
     color: black;
-    font-size: 10vmin;
+    font-size: 6vmin;
     font-weight: bolder;
 }
 
 #logo:hover span{
     color: var(--color1);
-    font-size: 7vmin;
+    font-size: 4vmin;
 }
 
 #logo span {
-    font-size: 5vmin;
+    font-size: 3vmin;
     transition: 0.3s;
     font-style: italic;
 }
 
 nav img {
-    width: 100%;
+    width: 80%;
+}
+
+@media screen and (max-width: 480px) {
+    nav img {
+        width: 100%;
+    }
+
+    #logo {
+        font-size: 8vmin;
+    }
+
+    #logo:hover span{
+        font-size: 5vmin;
+    }
+    
+    #logo span {
+        font-size: 4vmin;
+    }
 }

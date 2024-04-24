@@ -16,6 +16,11 @@ main{
 }
 
 img{
-    width: 83vmin;
-    aspect-ratio: 1.78;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+        display: inline;
+    }
 }
