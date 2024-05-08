@@ -3,6 +3,7 @@ main{
     flex-direction: column;
     row-gap: 10vmin;
     margin-bottom: 10vmin;
+    align-items: center;
 }
 
 .container{
@@ -16,11 +17,19 @@ main{
 }
 
 img{
-    width: 100%;
+    width: 38vw;
+}
+
+h1 {
+    font-size: 5vmin;
 }
 
 @media screen and (max-width: 480px) {
     .container{
         display: inline;
     }
+
+    img{
+        width: 70vw;
+    }    
 }

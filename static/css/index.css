@@ -52,7 +52,7 @@ main button:hover {
 .greeting {
   position: relative;
   top: 8.6vmin;
-  margin: 2.2vmin;
+  margin: 3.3vmin;
 }
 
 .naranja {
@@ -86,6 +86,10 @@ main button:hover {
 }
 
 @media screen and (max-width: 480px) {
+  .greeting {
+    margin: 2.2vmin;
+  }
+  
   main h1 {
     font-size: 5vmin;
   }
