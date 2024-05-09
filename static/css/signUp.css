@@ -42,6 +42,11 @@ button{
       font-size: 3vmin;
     }
 
+    #mail_error, #pass_error{
+        font-size: 2vmin;
+        min-height: 2.7vmin;
+    }
+
     button {
         width: 20vmin;
         height: 10vmin;
